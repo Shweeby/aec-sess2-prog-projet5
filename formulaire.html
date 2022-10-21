@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/formscript.js" defer></script>
+</head>
+
+<body>
+    <nav><a href="quizz.html">Quizz</a></nav>
+
+    <div class="title">Formulaire de commande :</div>
+    <form action="form.html" id="form" name="form">
+        <fieldset>
+             <div class="champ">
+                <label for="prenom">Prénom :</label>
+                <input id="prenom" name="prenom" type="text" />
+                <span id="errorPrenom" class="error"></span>
+            </div>
+         <div class="champ">
+                <label for="nom">Nom :</label>
+                <input id="nom" name="nom" type="text" />
+                <span id="errorNom" class="error"></span>
+            </div>
+            <div class="champ">
+                <label for="adresse">Adresse :</label>
+                <input id="adresse" name="adresse" type="text" />
+                <span id="errorAdresse" class="error"></span>
+            </div> 
+            <div class="champ">
+                <label for="postal">Code Postal :</label>
+                <input id="postal" name="postal" type="text" />
+                <span id="errorPostal" class="error"></span>
+            </div>
+            <div class="champ">
+                <label for="ville">Ville :</label>
+                <input id="ville" name="ville" type="text" />
+                <span id="errorVille" class="error"></span>
+            </div>
+            <div class="champ">
+                <label for="pays">Pays :</label>
+                <select name="pays" id="pays">
+                    <option value="0" label="Séléctionner un pays"></option>
+                    <option value="Canada">Canada</option>
+                    <option value="Etats-Unis">Etats-Unis</option>
+                </select>
+                <span id="errorPays" class="error"></span>
+            </div>
+             <div class="champ">
+                <label for="livraison">Date de livraison :</label>
+                <input id="livraison" name="livraison" type="date" />
+                <span id="errorLivraison" class="error"></span>
+            </div>
+            <div class="champ">
+                <label for="produit">Nombre de produit :</label>
+                <input id="produit" name="produit" type="number" />
+                <span id="errorProduit" class="error"></span>
+            </div>
+            <div class="champ">
+                <label for="cb">Numéro de la carte de crédit :</label>
+                <input id="cb" name="cb" type="text" />
+                <span id="errorCB" class="error"></span>
+            </div>
+            <label>Informations relatives à la commande :</label>
+            <div class="info-com">
+                <div>Prix total sans taxes : <span id="TST"></span></div>
+                <div>Taxes TPS : <span id="TPS"></span></div>
+                <div>Taxes TVQ : <span id="TVQ"></span></div>
+                <div>Prix total avec taxes : <span id="TTC"></span></div>
+            </div>
+            <div class="center">
+                <input type="submit" name="envoi" id="envoi" value="Envoyer" />
+            </div>
+        </fieldset>
+    </form>
+    <div id="message" class="message">
+        Merci pour votre commande !
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/quizzscript.js" defer></script>
+</head>
+
+<body>
+    <div class="container-btn">
+        <div id="score" class="score para">Score : <span id="point">0</span></div>
+        <button id="start" class="btn para">Démarrer le quizz</button>
+        <div id="timer" class="time para">Temps restant : <span id="comptTimer">30</span></div>
+    </div>
+
+    <div id="carrou" class="container">
+        <div class="carrousel-container">
+            <div id="item" class="carrousel-item">
+                <img id="carrouImg" alt="" src="img/0.jpg">
+            </div>
+
+            <form>
+                <div id="question" class="quest"></div>
+                <input id="reponse" type="text" placeholder="Capitale">
+                <input type="submit" class="btnS" name="" id="envoyer" value="Ok">
+            </form>
+        </div>
+        <div class="btn-2">
+            <button id="prev" class="btnS">Précédent</button>
+            <button id="next" class="btnS">Suivant</button>
+        </div>
+    </div>
+    <nav><a href="formulaire.html">Formulaire</a></nav>
+</body>
+
+</html>
